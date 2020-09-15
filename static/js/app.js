@@ -37,8 +37,8 @@ function runEnter(){
 
     //get the value property for each of the three filter options
     var inputDate = inputElement.property("value");
-    var inputState = inputElement2.property("value");
-    var inputCity = inputElement3.property("value");
+    var inputState = inputElement2.property("value").toLowerCase();
+    var inputCity = inputElement3.property("value").toLowerCase();
 
     //establish the data that we are going to start filtering and set it to a variable
     var filteredData = tableData
