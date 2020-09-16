@@ -44,26 +44,23 @@ function runEnter(){
     var filteredData = tableData
 
     //overwrite the filtereData variable with the filter for each input value
-    //if there is not input value for one of the filters it will just move to the next if statement
+    //if there is no input value for one of the filters it will just move to the next "if" statement
     if (inputDate) {
-
         filteredData = filteredData.filter(sighting => sighting.datetime===inputDate)
     }
 
     if (inputState) {
-
         filteredData = filteredData.filter(sighting => sighting.state===inputState)
     }
 
     if (inputCity) {
-
         filteredData = filteredData.filter(sighting => sighting.city===inputCity)
     }
 
     //check in the console to make sure our filtered data is correct
     console.log(filteredData)
 
-    //call our populate table function inside this function so that it will replace the tabel with our filtered data
+    //call our populate table function inside this function so that it will replace the table with our filtered data
     populateTable(filteredData)
 }
 
@@ -77,4 +74,4 @@ reset.on("click", (reset) => {
 button.on("click", runEnter);
 
 //populate the table with the data upon opening the webpage
-populateTable(tableData)
+populateTable(tableData);
