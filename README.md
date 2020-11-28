@@ -22,3 +22,5 @@ you press the "Filter Table" button has the other function nested inside of the 
 
 6.)  Lastly, I created a "css" file in order to change the fonts, colors, and layout of the index.html.
 
+INSTRUCTIONS: To see this project just run the "app.js" file in the terminal and obtain the link. 
+
